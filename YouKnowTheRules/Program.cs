@@ -6,7 +6,6 @@ namespace YouKnowTheRules
 {
     class Program
     {
-
         static void Main()
         {
             Console.SetWindowSize(40, 12);

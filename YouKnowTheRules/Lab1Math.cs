@@ -28,5 +28,20 @@ namespace YouKnowTheRules
             //menucheckerresult = period;
             return period;
         }
+
+        public byte[] genIv(int size, int m, int a, int c)
+        {
+            double[] x = new double[size];
+            x[0] = new Random().NextDouble() * m; 
+
+            byte[] iv = new byte[size];
+            for (int i = 0; i < size; i++)
+            {
+                x[i] = (a * x[i] + c) % m;
+                iv[i] = (byte)(x[i] % 256);
+            }
+
+            return iv;
+        }
     }
 }

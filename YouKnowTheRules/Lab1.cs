@@ -38,28 +38,12 @@ namespace YouKnowTheRules
             //x[0] = 17;
         }
 
-        //public int AllMath()
-        //{
-        //    period = 0;
-        //    for (int i = 0; i < n - 1; i++)
-        //    {
-        //        x[i + 1] = (a * x[i] + c) % m;
-
-        //        if (i == 1) firstgenerated = x[i];
-
-        //        if (x[i + 1] == firstgenerated) break;
-        //        else period++;
-        //    }
-        //    firstgenerated = -1;
-        //    menucheckerresult = period;
-        //    return period;
-        //}
-
         public int MaxElement()
         {
             string maxElem;
 
-            Console.WriteLine("How many first numbers do you want to see? Enter needed number:");
+            Console.WriteLine(" How many first numbers do you want to see? Enter needed number:");
+            Console.Write(" ");
 
             do
             {
@@ -184,8 +168,8 @@ namespace YouKnowTheRules
                                 case 0:
                                     if (checker == false)
                                     {
-                                        Console.WriteLine("Can't identify a number. M will be a default: 134217727");
-                                        m = 134217727;
+                                        Console.WriteLine("Can't identify a number. M will be a default: 33554431");
+                                        m = 33554431;
                                         megachecker = true;
                                     }
                                     else m = int.Parse(lines[0].Substring(startPosition - 1));  /////////////
@@ -194,8 +178,8 @@ namespace YouKnowTheRules
                                 case 1:
                                     if (checker == false)
                                     {
-                                        Console.WriteLine("Can't identify a number. A will be a default: 2744");
-                                        a = 2744;
+                                        Console.WriteLine("Can't identify a number. A will be a default: 1728");
+                                        a = 1728;
                                         megachecker = true;
                                     }
                                     else a = int.Parse(lines[1].Substring(startPosition - 1));  /////////////
@@ -204,8 +188,8 @@ namespace YouKnowTheRules
                                 case 2:
                                     if (checker == false)
                                     {
-                                        Console.WriteLine("Can't identify a number. C will be a default: 2584");
-                                        c = 2584;
+                                        Console.WriteLine("Can't identify a number. C will be a default: 987");
+                                        c = 987;
                                         megachecker = true;
                                     }
                                     else c = int.Parse(lines[2].Substring(startPosition - 1));  /////////////
@@ -214,8 +198,8 @@ namespace YouKnowTheRules
                                 case 3:
                                     if (checker == false)
                                     {
-                                        Console.WriteLine("Can't identify a number. X1 will be a default: 17");
-                                        x[0] = 17;
+                                        Console.WriteLine("Can't identify a number. X1 will be a default: 11");
+                                        x[0] = 11;
                                         megachecker = true;
                                     }
                                     else x[0] = int.Parse(lines[3].Substring(startPosition - 1));  /////////////
